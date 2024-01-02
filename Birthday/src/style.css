@@ -1,0 +1,78 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+  border-color: #7f5539;
+  height: max-content;
+}
+
+
+body{
+  background: url('e5f8a37c48774cb77fa6ebddb1bf97be.jpg') ;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  margin: 12px;
+  overflow-y: hidden;
+}
+
+.container {
+  height: 100vh;
+  padding: 10px;
+  gap: 15px;
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "content content"
+  "image image"
+  "button1 button2";
+  justify-items: center;
+}
+
+.content{
+  grid-area: content;
+  text-align: center;
+  color : #7f5539 ;
+  font-family: 'Silkscreen', sans-serif;
+ font-size: x-large;
+ font-weight: 500;
+
+}
+.gif{
+  grid-area: image;
+}
+.image {
+  width: 250px;
+  height: 250px;
+}
+
+.button{
+  grid-area: button1;
+}
+
+#gifts{
+  border: 3px solid;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: 'Silkscreen', sans-serif;
+  color : #7f5539 ;
+}
+
+#uwish{
+  
+    border: 3px solid;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Silkscreen', sans-serif;
+    color : #7f5539 ;
+  
+}
+
+.button2{
+  grid-area: button2;
+  
+}
